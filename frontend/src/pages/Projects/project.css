@@ -1,0 +1,60 @@
+.project {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e9e9d8;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70vw;
+  padding-top: 2%;
+  padding-left: 15%;
+  gap: 12px;
+}
+
+.project-bloc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  border: 2px solid black;
+  padding: 1%;
+  padding-bottom: 3%;
+  width: 30vw;
+  height: 30vh;
+  gap: 12px;
+}
+
+.project-image {
+  display: flex;
+  gap: 2px;
+}
+.reactIcon {
+  width: 3vw;
+  height: 7vh;
+  border: 1px solid black;
+}
+.nodeIcon {
+  width: 3vw;
+  height: 7vh;
+  border: 1px solid black;
+}
+.sqlIcon {
+  width: 6vw;
+  height: 8vh;
+  border: 1px solid black;
+}
+
+.project-date {
+  width: 5vw;
+  height: 5vh;
+  border: 1px solid black;
+}
+
+.project-description {
+  border: 1px solid black;
+  width: 30vw;
+  height: 15vh;
+}

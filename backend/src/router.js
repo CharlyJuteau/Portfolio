@@ -10,4 +10,12 @@ router.put("/items/:id", itemControllers.edit);
 router.post("/items", itemControllers.add);
 router.delete("/items/:id", itemControllers.destroy);
 
+const projectControllers = require("./controllers/projectControllers");
+
+router.get("/project", projectControllers.browse);
+
+const messageControllers = require("./controllers/messageControllers");
+
+router.post("/message", messageControllers.add);
+
 module.exports = router;

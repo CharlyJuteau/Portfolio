@@ -1,0 +1,19 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-color: #009855;
+}
+
+.header-home {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 3%;
+}
+
+.title {
+  border: 2px solid black;
+  width: 20vw;
+  padding: 2%;
+}

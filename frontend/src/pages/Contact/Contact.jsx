@@ -1,5 +1,5 @@
 import Navbar from "@components/Navbar/Navbar";
-// import axios from "axios";
+import axios from "axios";
 import { useState } from "react";
 import "./contact.css";
 
@@ -17,9 +17,9 @@ export default function Contact() {
   const hSubmit = (evt) => {
     evt.preventDefault();
 
-    // axios
-    //   .post("http://localhost:5000/message", contactForm)
-    //   .then(({ data }) => {});
+     axios
+      .post("http://localhost:5000/message", contactForm)
+      .then(({ data }) => {});
   };
   return (
     <div className="contact" id="contact-section">

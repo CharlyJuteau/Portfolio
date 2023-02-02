@@ -1,19 +1,101 @@
+@import "../../variable.css";
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inconsolata&family=Itim&display=swap");
+
+@keyframes slideIn {
+  from {
+    transform: translate(-200%, 0%);
+  }
+}
+
 .home {
   width: 100vw;
-  height: 100vh;
-  background-color: #009855;
+  height: 150vh;
+  /* background-color: #009855; */
+  background-color: #6ac953;
+  /* background-color: #dde846; */
 }
 
 .header-home {
   display: flex;
-  justify-content: space-between;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-top: 3%;
+  justify-content: flex-end;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
 }
 
-.title {
+.home-title {
   border: 2px solid black;
   width: 20vw;
   padding: 2%;
+  height: 2vh;
+  color: antiquewhite;
+  font-family: var(--fontFamily);
+  font-size: 1.5rem;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid coral; */
+  height: 70vh;
+}
+
+.home-container-presentation {
+  /* border: 2px solid blueviolet; */
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 40vw;
+}
+
+.home-presentation-1 {
+  font-size: 4.3rem;
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+  color: rgb(207, 220, 20);
+  animation-name: slideInRight;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.home-presentation-2 {
+  font-size: 4.6rem;
+  font-family: var(--fontFamily);
+  font-style: italic;
+  color: #00697c;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.home-presentation-3 {
+  font-size: 3.7rem;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  color: rgb(207, 220, 20);
+  animation-name: slideInRight;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.home-presentation-4 {
+  font-size: 3.2rem;
+  font-family: "Fredoka One", cursive;
+  font-style: italic;
+  color: #00697c;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.home-container-text {
+  position: absolute;
+  top: 110%;
+  font-family: var(--fontFamily);
+  color: white;
+  /* border: 2px solid skyblue; */
+  font-size: 5.1rem;
+  width: 60vw;
 }

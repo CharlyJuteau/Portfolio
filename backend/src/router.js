@@ -18,4 +18,8 @@ const messageControllers = require("./controllers/messageControllers");
 
 router.post("/message", messageControllers.add);
 
+const technologieControllers = require("./controllers/technologieControllers");
+
+router.get("/technologie", technologieControllers.browse);
+
 module.exports = router;

@@ -1,10 +1,10 @@
+import Typewriter from "typewriter-effect";
 import Navbar from "../../components/Navbar/Navbar";
 import "./home.css";
 import drum from "../../assets/icons-drum.png";
 import hand from "../../assets/icons-hand.png";
 import mate from "../../assets/icons-mate.png";
 import laptop from "../../assets/icons-laptop.png";
-import Typewriter from "typewriter-effect";
 
 export default function Home() {
   return (

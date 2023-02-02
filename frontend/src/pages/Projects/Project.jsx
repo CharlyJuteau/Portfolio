@@ -18,7 +18,6 @@ export default function Project() {
     axios.get("http://localhost:5000/project").then(({ data }) => {
       for (let i = 0; i < data.length; i += 1) {
         setProjectInfo(data);
-        console.log(projectInfo);
       }
     });
   }, []);
@@ -88,6 +87,7 @@ export default function Project() {
                       className="project-demonstration"
                       href={project.link}
                       target="_blank"
+                      rel="noreferrer"
                     >
                       See on live !
                     </a>

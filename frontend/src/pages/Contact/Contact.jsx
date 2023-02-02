@@ -1,12 +1,12 @@
 import Navbar from "@components/Navbar/Navbar";
-import axios from "axios";
+// import axios from "axios";
 import { useState } from "react";
 import "./contact.css";
+import ScrollTopButton from "@components/ScrollTopButton/ScrollTopButton";
 import gmail from "../../assets/gmail.png";
 import github from "../../assets/github.png";
 import resume from "../../assets/resume.png";
 import CV from "../../assets/CharlyCV.pdf";
-import ScrollTopButton from "@components/ScrollTopButton/ScrollTopButton";
 
 export default function Contact() {
   const [contactForm, setContactForm] = useState({
@@ -22,9 +22,9 @@ export default function Contact() {
   const hSubmit = (evt) => {
     evt.preventDefault();
 
-     axios
-      .post("http://localhost:5000/message", contactForm)
-      .then(({ data }) => {});
+    //   axios
+    //     .post("http://localhost:5000/message", contactForm)
+    //     .then(({ data }) => {});
   };
   return (
     <div className="contact" id="contact-section">
@@ -39,10 +39,16 @@ export default function Contact() {
           href="https://github.com/CharlyJuteau"
           target="_blank"
           className="contact-info-logo"
+          rel="noreferrer"
         >
           <img src={github} alt="github" />
         </a>
-        <a href={CV} target="_blank" className="contact-info-logo">
+        <a
+          href={CV}
+          target="_blank"
+          className="contact-info-logo"
+          rel="noreferrer"
+        >
           <img src={resume} alt="resume" />
         </a>
       </div>

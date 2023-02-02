@@ -2,6 +2,11 @@ import Navbar from "@components/Navbar/Navbar";
 import axios from "axios";
 import { useState } from "react";
 import "./contact.css";
+import gmail from "../../assets/gmail.png";
+import github from "../../assets/github.png";
+import resume from "../../assets/resume.png";
+import CV from "../../assets/CharlyCV.pdf";
+import ScrollTopButton from "@components/ScrollTopButton/ScrollTopButton";
 
 export default function Contact() {
   const [contactForm, setContactForm] = useState({
@@ -24,40 +29,67 @@ export default function Contact() {
   return (
     <div className="contact" id="contact-section">
       <header className="header-home">
-        <div className="title">Charly Juteau</div>
         <Navbar />
       </header>
-      <form onSubmit={hSubmit}>
-        <h1>Send me a message !</h1>
-        <div>
+      <div className="contact-info-container">
+        <a href="mailto:charly.juteau4@gmail.com" className="contact-info-logo">
+          <img src={gmail} alt="gmail" />
+        </a>
+        <a
+          href="https://github.com/CharlyJuteau"
+          target="_blank"
+          className="contact-info-logo"
+        >
+          <img src={github} alt="github" />
+        </a>
+        <a href={CV} target="_blank" className="contact-info-logo">
+          <img src={resume} alt="resume" />
+        </a>
+      </div>
+      <div className="contact-container">
+        <form onSubmit={hSubmit} className="contact-form">
+          <h1 className="contact-title">Send me a message !</h1>
+          <div className="contact-input-container">
+            <input
+              className="contact-input"
+              type="text"
+              placeholder="name"
+              name="name"
+              onChange={hChange}
+              value={contactForm.name}
+              required
+            />
+          </div>
+          <div className="contact-input-container">
+            <input
+              className="contact-input"
+              type="email"
+              placeholder="email"
+              name="email"
+              onChange={hChange}
+              value={contactForm.email}
+              required
+            />
+          </div>
+          <div className="contact-input-container">
+            <input
+              className="contact-input-message"
+              type="text"
+              placeholder="message"
+              name="message"
+              onChange={hChange}
+              value={contactForm.message}
+              required
+            />
+          </div>
           <input
-            type="text"
-            placeholder="name"
-            name="name"
-            onChange={hChange}
-            value={contactForm.name}
+            className="contact-input-submit"
+            type="submit"
+            value="Send message"
           />
-        </div>
-        <div>
-          <input
-            type="email"
-            placeholder="email"
-            name="email"
-            onChange={hChange}
-            value={contactForm.email}
-          />
-        </div>
-        <div>
-          <input
-            type="text"
-            placeholder="message"
-            name="message"
-            onChange={hChange}
-            value={contactForm.message}
-          />
-        </div>
-        <input type="submit" value="Send message" />
-      </form>
+        </form>
+      </div>
+      <ScrollTopButton />
     </div>
   );
 }

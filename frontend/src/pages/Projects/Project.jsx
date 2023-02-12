@@ -2,9 +2,9 @@ import Navbar from "@components/Navbar/Navbar";
 import { useEffect, useState } from "react";
 import "./project.css";
 import axios from "axios";
-import react from "../../assets/react.png";
-import node from "../../assets/node.png";
-import sql from "../../assets/sql.png";
+import react from "../../assets/stacks/react.png";
+import node from "../../assets/stacks/node.png";
+import sql from "../../assets/stacks/sql.png";
 
 export default function Project() {
   const [showProjects, setShowProjects] = useState(false);

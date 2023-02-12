@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { FaArrowCircleUp } from "react-icons/fa";
 import arrow from "../../assets/arrow.png";
 import "./scrollTopButton.css";
 
@@ -8,9 +7,9 @@ function ScrollTopButton() {
 
   const ToggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 2200) {
+    if (scrolled > 3300) {
       setVisible(true);
-    } else if (scrolled < 2200) {
+    } else if (scrolled < 3300) {
       setVisible(false);
     }
   };

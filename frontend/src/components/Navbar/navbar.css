@@ -3,6 +3,8 @@
 .navbar-container {
   border-right: 4px solid whitesmoke;
   padding-right: 1%;
+  padding-top: 1%;
+  /* height: 100%; */
 }
 
 .navbar-table {

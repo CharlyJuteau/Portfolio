@@ -11,6 +11,9 @@ export default function Navbar() {
         <HashLink smooth to="/#project-section" className="navbar-link">
           <li className="navbar-text">Projects</li>
         </HashLink>
+        <HashLink smooth to="/#stack-section" className="navbar-link">
+          <li className="navbar-text">Stacks</li>
+        </HashLink>
         <HashLink smooth to="/#contact-section" className="navbar-link">
           <li className="navbar-text">Contact me</li>
         </HashLink>

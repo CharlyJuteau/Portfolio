@@ -1,12 +1,10 @@
 import Navbar from "@components/Navbar/Navbar";
 // import axios from "axios";
+// import emailjs from "emailjs-com";
 import { useState } from "react";
 import "./contact.css";
-import ScrollTopButton from "@components/ScrollTopButton/ScrollTopButton";
-import gmail from "../../assets/gmail.png";
-import github from "../../assets/github.png";
-import resume from "../../assets/resume.png";
-import CV from "../../assets/CharlyCV.pdf";
+
+// import { toast } from "react-toastify";
 
 export default function Contact() {
   const [contactForm, setContactForm] = useState({
@@ -22,36 +20,39 @@ export default function Contact() {
   const hSubmit = (evt) => {
     evt.preventDefault();
 
-    //   axios
-    //     .post("http://localhost:5000/message", contactForm)
-    //     .then(({ data }) => {});
+    // axios
+    //   .post("http://localhost:5000/message", contactForm)
+    //   .then(({ data }) => {});
+    // if (hSubmit) {
+    //   toast.success("message sent !");
+    // } else {
+    //   toast.error("message not sent");
+    // }
+
+    // emailjs
+    //   .sendForm(
+    //     "service_w6it5ch",
+    //     "template_cgb2824",
+    //     evt.target,
+    //     "gdgXfDJnbynyfovNc"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
+    // evt.target.reset(contactForm);
   };
+
   return (
     <div className="contact" id="contact-section">
       <header className="header-home">
         <Navbar />
       </header>
-      <div className="contact-info-container">
-        <a href="mailto:charly.juteau4@gmail.com" className="contact-info-logo">
-          <img src={gmail} alt="gmail" />
-        </a>
-        <a
-          href="https://github.com/CharlyJuteau"
-          target="_blank"
-          className="contact-info-logo"
-          rel="noreferrer"
-        >
-          <img src={github} alt="github" />
-        </a>
-        <a
-          href={CV}
-          target="_blank"
-          className="contact-info-logo"
-          rel="noreferrer"
-        >
-          <img src={resume} alt="resume" />
-        </a>
-      </div>
+
       <div className="contact-container">
         <form onSubmit={hSubmit} className="contact-form">
           <h1 className="contact-title">Send me a message !</h1>
@@ -95,7 +96,6 @@ export default function Contact() {
           />
         </form>
       </div>
-      <ScrollTopButton />
     </div>
   );
 }

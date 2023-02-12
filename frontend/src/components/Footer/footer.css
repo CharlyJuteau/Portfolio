@@ -1,0 +1,19 @@
+.footer-container {
+  background-color: coral;
+}
+
+.contact-info-container {
+  padding: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.contact-info-logo {
+  transition: transform 0.2s;
+}
+
+.contact-info-logo:hover {
+  transform: scale(1.3);
+}

@@ -9,11 +9,20 @@
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .home {
   width: 100vw;
   height: 150vh;
   /* background-color: #009855; */
-  background-color: #6ac953;
+  background-color: #80a93a;
   /* background-color: #dde846; */
 }
 
@@ -57,8 +66,8 @@
   font-size: 4.3rem;
   font-family: "Abril Fatface", cursive;
   font-weight: bold;
-  color: rgb(207, 220, 20);
-  animation-name: slideInRight;
+  color: rgb(24, 24, 22);
+  animation-name: fadeIn;
   animation-duration: 2s;
   animation-iteration-count: 1;
 }
@@ -66,27 +75,27 @@
   font-size: 4.6rem;
   font-family: var(--fontFamily);
   font-style: italic;
-  color: #00697c;
-  animation-name: slideIn;
-  animation-duration: 2s;
+  color: rgb(24, 24, 22);
+  animation-name: fadeIn;
+  animation-duration: 4s;
   animation-iteration-count: 1;
 }
 .home-presentation-3 {
   font-size: 3.7rem;
   font-family: "Inconsolata", monospace;
   font-weight: bold;
-  color: rgb(207, 220, 20);
-  animation-name: slideInRight;
-  animation-duration: 2s;
+  color: rgb(24, 24, 22);
+  animation-name: fadeIn;
+  animation-duration: 6s;
   animation-iteration-count: 1;
 }
 .home-presentation-4 {
   font-size: 3.2rem;
   font-family: "Fredoka One", cursive;
   font-style: italic;
-  color: #00697c;
-  animation-name: slideIn;
-  animation-duration: 2s;
+  color: rgb(24, 24, 22);
+  animation-name: fadeIn;
+  animation-duration: 6s;
   animation-iteration-count: 1;
 }
 
@@ -94,7 +103,7 @@
   position: absolute;
   top: 110%;
   font-family: var(--fontFamily);
-  color: white;
+  color: rgb(24, 24, 22);
   /* border: 2px solid skyblue; */
   font-size: 5.1rem;
   width: 60vw;

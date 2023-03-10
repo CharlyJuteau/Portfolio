@@ -12,7 +12,7 @@ export default function Project() {
   const [projectInfo, setProjectInfo] = useState({});
   const [hoverProject, setHoverProject] = useState(false);
   const [showButtonDetails, setShowButtonDetails] = useState(true);
-  // const [technologies, setTechnologies] = useState({});
+  const [technologies, setTechnologies] = useState({});
 
   useEffect(() => {
     axios.get("http://localhost:5000/project").then(({ data }) => {
@@ -22,12 +22,12 @@ export default function Project() {
     });
   }, []);
 
-  // useEffect(() => {
-  //   axios.get("http://localhost:5000/technologie").then(({ data }) => {
-  //     setTechnologies(data);
-  //     console.log(data);
-  //   });
-  // }, []);
+  useEffect(() => {
+    axios.get("http://localhost:5000/technologie").then(({ data }) => {
+      setTechnologies(data);
+      console.log(data);
+    });
+  }, []);
 
   const projectContainer = () => {
     setShowProjects(true);

@@ -1,0 +1,68 @@
+@import "../../variable.css";
+
+.contact {
+  width: 100vw;
+  height: 120vh;
+  background-color: #7a804d;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.contact-title {
+  font-family: var(--fontFamily);
+  color: antiquewhite;
+  font-size: 1.5rem;
+  padding: 5%;
+}
+
+.contact-input-container {
+  padding: 1%;
+}
+
+.contact-input {
+  padding: 2%;
+  border: 2px solid rgb(13, 139, 43);
+  width: 40vw;
+  height: 2vh;
+  border-radius: 2.5rem;
+  background-color: #474838;
+  color: antiquewhite;
+  font-family: var(--fontFamily);
+}
+
+.contact-input-message {
+  padding: 2%;
+  border: 2px solid rgb(13, 139, 43);
+  width: 40vw;
+  height: 10vh;
+  border-radius: 2.5rem;
+  background-color: #474838;
+  color: antiquewhite;
+  font-family: var(--fontFamily);
+}
+
+.contact-input-submit {
+  width: 20vw;
+  padding: 2%;
+  font-family: var(--fontFamily);
+  color: antiquewhite;
+  background-color: #b85d3a;
+  border-radius: 2.5rem;
+  box-shadow: 0 9px #999;
+}
+
+.contact-input-submit:hover {
+  cursor: pointer;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+::placeholder {
+  color: antiquewhite;
+}

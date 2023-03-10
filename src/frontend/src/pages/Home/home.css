@@ -1,0 +1,110 @@
+@import "../../variable.css";
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Itim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inconsolata&family=Itim&display=swap");
+
+@keyframes slideIn {
+  from {
+    transform: translate(-200%, 0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home {
+  width: 100vw;
+  height: 150vh;
+  /* background-color: #009855; */
+  background-color: #80a93a;
+  /* background-color: #dde846; */
+}
+
+.header-home {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+}
+
+.home-title {
+  border: 2px solid black;
+  width: 20vw;
+  padding: 2%;
+  height: 2vh;
+  color: antiquewhite;
+  font-family: var(--fontFamily);
+  font-size: 1.5rem;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid coral; */
+  height: 70vh;
+}
+
+.home-container-presentation {
+  /* border: 2px solid blueviolet; */
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 40vw;
+}
+
+.home-presentation-1 {
+  font-size: 4.3rem;
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+  color: rgb(24, 24, 22);
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.home-presentation-2 {
+  font-size: 4.6rem;
+  font-family: var(--fontFamily);
+  font-style: italic;
+  color: rgb(24, 24, 22);
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+.home-presentation-3 {
+  font-size: 3.7rem;
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  color: rgb(24, 24, 22);
+  animation-name: fadeIn;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+.home-presentation-4 {
+  font-size: 3.2rem;
+  font-family: "Fredoka One", cursive;
+  font-style: italic;
+  color: rgb(24, 24, 22);
+  animation-name: fadeIn;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+
+.home-container-text {
+  position: absolute;
+  top: 110%;
+  font-family: var(--fontFamily);
+  color: rgb(24, 24, 22);
+  /* border: 2px solid skyblue; */
+  font-size: 5.1rem;
+  width: 60vw;
+}
